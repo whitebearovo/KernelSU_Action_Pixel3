@@ -238,7 +238,7 @@ jobs:
           export KSU_EXPECTED_HASH=${{ env.KSU_EXPECTED_HASH }}
         fi
         cd scripts
-        python3 build-all.py
+        python2 build-all.py
 
     - name: Check a kernel output files
       run: |
