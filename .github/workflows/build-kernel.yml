@@ -237,7 +237,8 @@ jobs:
           export KSU_EXPECTED_SIZE=${{ env.KSU_EXPECTED_SIZE }}
           export KSU_EXPECTED_HASH=${{ env.KSU_EXPECTED_HASH }}
         fi
-        export CROSS_COMPILE=aarch64-linux-android-
+        export CROSS_COMPILE=arm-linux-androideabi-
+        export CROSS_COMPILE64=aarch64-linux-android-
         python2 scripts/build-all.py
 
     - name: Check a kernel output files
