@@ -238,6 +238,7 @@ jobs:
           export KSU_EXPECTED_HASH=${{ env.KSU_EXPECTED_HASH }}
         fi
         cd scripts
+        export CROSS_COMPILE=aarch64-linux-android-
         python2 build-all.py
 
     - name: Check a kernel output files
