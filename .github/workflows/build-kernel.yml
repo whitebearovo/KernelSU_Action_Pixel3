@@ -239,7 +239,7 @@ jobs:
         fi
         export CROSS_COMPILE=arm-linux-androideabi-
         export CROSS_COMPILE64=aarch64-linux-android-
-        python2 scripts/build-all.py
+        python2 scripts/build-all.py -all
 
     - name: Check a kernel output files
       run: |
