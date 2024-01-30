@@ -240,7 +240,7 @@ jobs:
         export CROSS_COMPILE=aarch64-linux-android-
         export CC=clang \
         export CROSS_COMPILE64=aarch64-linux-android-
-        python2 scripts/build-all.py all
+        python2 scripts/mkdtboimg.py
 
     - name: Check a kernel output files
       run: |
